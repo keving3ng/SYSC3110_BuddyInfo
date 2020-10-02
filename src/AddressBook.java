@@ -20,6 +20,12 @@ public class AddressBook {
         return null;
     }
 
+    public void listBuddies(){
+        for (BuddyInfo i : BuddyList){
+            System.out.println("Name: " + i.getName());
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("This is a remote change.");
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
